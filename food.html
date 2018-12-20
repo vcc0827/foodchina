@@ -1,44 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ChinaFood</title>
+  <meta charset="UTF-8">
+  <title>ChinaFood</title>
+  <!--Swiper css-->
+  <link rel="stylesheet" href="static/swiper-4.4.2/dist/css/swiper.min.css">
+  <!--food css-->
+  <link rel="stylesheet" href="static/food.css">
 </head>
 <body>
-<div class="my-top">
-  <!--左侧logo-->
-  <a href=""><img class="logo" src="../assets/logo.png" alt=""></a>
-  <!--导航栏-->
-  <div class="my-nav">
-    <ul class="nav">
-      <li><a href="">首页</a></li>
-      <li class="drop-down"><a href="">展会介绍</a>
-        <ul class="drop-down-content">
-          <li><a href="">组织机构</a></li>
-          <li><a href="">展区分布</a></li>
-          <li><a href="">展品范围</a></li>
-          <li><a href="">2017展商名录</a></li>
-          <li><a href="">2014展会回顾</a></li>
-          <li><a href="">2015展会回顾</a></li>
-          <li><a href="">2016展会回顾</a></li>
-          <li><a href="">2017展会回顾</a></li>
+<!--菜单栏底部多1px-->
+<header>
+  <!--top-->
+  <div class="my-top mid">
+    <div>
+      <!--左侧logo-->
+      <a href=""><img class="logo" src="src/assets/logo.png" alt=""></a>
+      <!--导航栏-->
+      <div class="my-nav">
+        <ul class="nav">
+          <li><a href="">首页</a></li>
+          <li class="drop-down"><a href="">展会介绍</a>
+            <ul class="drop-down-content">
+              <li><a href="">组织机构</a></li>
+              <li><a href="">展区分布</a></li>
+              <li><a href="">展品范围</a></li>
+              <li><a href="">2017展商名录</a></li>
+              <li><a href="">2014展会回顾</a></li>
+              <li><a href="">2015展会回顾</a></li>
+              <li><a href="">2016展会回顾</a></li>
+              <li><a href="">2017展会回顾</a></li>
+            </ul>
+          </li>
+          <li><a href="">参展服务</a></li>
+          <li><a href="">参观服务</a></li>
+          <li><a href="">现场活动</a></li>
+          <li><a href="">新闻中心</a></li>
+          <li><a href="">联系我们</a></li>
         </ul>
-      </li>
-      <li><a href="">参展服务</a></li>
-      <li><a href="">参观服务</a></li>
-      <li><a href="">现场活动</a></li>
-      <li><a href="">新闻中心</a></li>
-      <li><a href="">联系我们</a></li>
-    </ul>
+      </div>
+      <!--中英国旗图标-->
+      <div class="logo-right">
+        <span class="flag"><img src="src/assets/China Flag.png" alt=""></span>
+        <span>|</span>
+        <span class="flag"><img src="src/assets/UK Flag.png" alt=""></span>
+        <span id="en">EN</span>
+        <!--<span id="cn" v-show="show">中</span>-->
+      </div>
+    </div>
   </div>
-  <!--中英国旗图标-->
-  <div class="logo-right">
-    <span class="flag"><img src="../assets/China Flag.png" alt=""></span>
-    <span>|</span>
-    <span class="flag"><img src="../assets/UK Flag.png" alt=""></span>
-    <span id="en">EN</span>
-    <span id="cn" v-show="show">中</span>
+  <!--banner-->
+  <div class="my-banner">
+    <!--轮播图-->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+      </div>
+      <!-- 分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <!--入口-->
+  <div class="my-enter">
+    <div class="enter-box">
+      <div>
+        <div class="m1"></div>
+        <div class="c3">展位预定</div>
+      </div>
+      <div>
+        <div class="m2"></div>
+        <div class="c3">注册参观</div>
+      </div>
+      <div>
+        <div class="m3"></div>
+        <div class="c3">贸易配对</div>
+      </div>
+      <div>
+        <div class="m4"></div>
+        <div class="c3">热门活动</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--资讯-->
+  <div class="msg mid">
+    <div class="msg-ctro">
+      <div class="ctro-mid">
+        <div class="swiper-container car">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
+          </div>
+          <!-- 分页器 -->
+          <div class="swiper-pagination msg-swp"></div>
+          <!--<div class="msg-btns msg-btns-click"></div>-->
+        </div>
+        <div>
+          <div>
+            <div>07</div>
+            <div>5月</div>
+            <div>2018第五届中国（上海）国际食品博览会筹备会议隆重召开</div>
+            <p>
+              2018年5月4日，第五届中国（上海）国际食品博览会筹备会议在黄山茶林场隆重召开。中国食品工业协会刘治常务副会长、中国食品工业协会曹树民副会长、中国食品工业协会侯红梅主任、上海市食品...
+            </p>
+          </div>
+          <div class="line"></div>
+          <div class="msg-down">
+            <div class="left-top">10</div>
+            <div class="left-mid">12月</div>
+            <div class="mid-top">精彩展会，感谢有您|致所有食博会来宾</div>
+            <p class="content">尊敬的各位来宾：由中华人民共和国商务部批准，中国食品工业协会主办，光明食品（集团）有限公司承办，上海东艺会展服务有限公司运营的2017中国国际食品博览会已完美落下帷幕...</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn">更多资讯</button>
+    </div>
   </div>
 </div>
+<footer>
+
+</footer>
+
+<!--Swiper JS-->
+<script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+<!--Swiper初始化-->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides:true,
+    autoplay:{
+      delay:2500,
+      disableOnInteraction:false,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 </body>
 </html>

@@ -38,23 +38,23 @@
     </div>
     <!--banner start-->
     <div class="my-banner">
-      <!--会展名-->
-      <div class="show-name">
-        <img src="../assets/showName.png" alt="">
-      </div>
-      <!--时间地点-->
-      <div class="time-place">
-        <img src="../assets/timePlace.png" alt="">
-      </div>
-      <!--轮播图-->
-      <div class="banner-dot">
-        <span class="dots"></span>
-        <span class="dots"></span>
-        <span class="dots"></span>
-        <span class="dots"></span>
-      </div>
-
+    <!--会展名-->
+    <div class="show-name">
+      <img src="../assets/showName.png" alt="">
     </div>
+    <!--时间地点-->
+    <div class="time-place">
+      <img src="../assets/timePlace.png" alt="">
+    </div>
+    <!--轮播图-->
+    <div class="banner-dot">
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+    </div>
+
+  </div>
     <!--banner end-->
     <!--入口 start-->
     <!--焦点目标字体颜色加深、图标变色-->
@@ -567,7 +567,7 @@
   .my-banner {
     width: 1920px;
     height: 360px;
-    background-image: url("../assets/bannerbg_02.png");
+    background-image: url("../assets/banner.png");
     position: relative;
     top: 3px;
     z-index: 0;
