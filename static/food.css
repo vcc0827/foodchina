@@ -163,45 +163,44 @@ li a:hover {
 .enter-box {
   display: flex;
   justify-content: space-between;
+  align-items:center;
   width: 1000px;
   height: 300px;
 }
 
 .m1 {
-  margin-top: 73px;
-  width: 101px;
-  height: 102px;
-  background-image: url("../src/assets/地图.png");
-  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background: url("../src/assets/sprites/入口.png") no-repeat -10px -10px;
 }
-
-.m1:hover {
-  background-image: url("../src/assets/地图悬停.png");
-}
-
 .m2 {
-  margin-top: 73px;
   width: 100px;
-  height: 102px;
-  background-image: url("../src/assets/对象.png");
-  background-repeat: no-repeat;
+  height: 100px;
+  background: url("../src/assets/sprites/入口.png") no-repeat -130px -10px;
 }
-
 .m3 {
-  margin-top: 73px;
   width: 100px;
-  height: 102px;
-  background-image: url("../src/assets/合作.png");
-  background-repeat: no-repeat;
+  height: 100px;
+  background: url("../src/assets/sprites/入口.png") no-repeat -10px -130px;
+}
+.m4 {
+  width: 100px;
+  height: 100px;
+  background: url("../src/assets/sprites/入口.png") no-repeat -130px -130px;
+}
+.m1:hover {
+  background: url("../src/assets/sprites/入口.png") no-repeat -250px -10px;
+}
+.m2:hover {
+  background: url("../src/assets/sprites/入口.png") no-repeat -250px -130px;
+}
+.m3:hover{
+  background:  url("../src/assets/sprites/入口.png") no-repeat -10px -250px;
+}
+.m4:hover{
+  background:  url("../src/assets/sprites/入口.png") no-repeat -130px -250px;
 }
 
-.m4 {
-  margin-top: 73px;
-  width: 100px;
-  height: 102px;
-  background-image: url("../src/assets/礼物.png");
-  background-repeat: no-repeat;
-}
 
 .c3 {
   margin-top: 29px;
