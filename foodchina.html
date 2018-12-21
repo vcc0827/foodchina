@@ -1,150 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   <meta charset="UTF-8">
   <title>FoodChina</title>
   <style>
-    /*top*/
-    .my-top {
-      width: 1920px;
-      height: 80px;
-      background-color: #ffffff;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    .father{
+      width: 170px;
+      height: 204px;
     }
-    .logo {
-      position: absolute;
-      left: 375px;
-      top: 23px;
-      bottom: 22px;
-      width: 132px;
-      height: 35px;
-      float: left;
-    }
-    .my-nav {
-      width: 697px;
-      height: 80px;
-      float: left;
-    }
-    .nav {
-      margin-left: 685px;
-      margin-right: 538px;
-      width: 697px;
-      height: 80px;
-    }
-    ul {
-      list-style: none;
-    }
-    .nav > li {
-      float: left;
-    }
-    ul a {
-      display: block;
-      text-decoration: none;
-      width: 80px;
-      height: 80px;
-      text-align: center;
-      line-height: 80px;
-      color: #333;
-      background-color: #fff;
-    }
-    ul > li > ul {
-      width: 150px;
-      height: 356px;
-      background-color: #ffffff;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+   .child1{
+     width: 170px;
+     height: 204px;
+     display:inline-block;
 
+   }
+    .child2{
+      width: 170px;
+      height: 204px;
+      display:none;
     }
-    ul > li > ul > li {
-      width: 150px;
-      height: 45px;
-      background: #fff;
-      border-bottom: 1px solid #dddddd;
-    }
-    .drop-down {
-      position: relative;
-    }
-    .drop-down-content {
-      padding: 0;
-      display: none;
-      position: absolute;
-      z-index: 1;
-    }
-    li a:hover {
-      color: #ed6d00;
-      background-color: #f5f5f5;
-      width: 80px;
-      height: 80px;
-      border-bottom: 2px solid #ed6d00;
-    }
-    .drop-down-content a {
-      color: #666666;
-      width: 150px;
-      height: 44px;
-      border-bottom: 0 solid #fff;
-    }
-    .drop-down-content a:hover {
-      color: #666666;
-      width: 150px;
-      height: 44px;
-      border-bottom: 1px solid #fff;
-    }
-    .drop-down-content li:hover a {
-      background-color: #f5f5f5;
-    }
-    .nav .drop-down:hover .drop-down-content {
-      display: block;
-      z-index: 1;
-    }
-
-
   </style>
 </head>
 <body>
-<div class="my-foood">
-  <!--top-->
-  <div class="my-top">
-    <!--左侧logo-->
-    <a href=""><img class="logo" src="/src/assets/logo.png" alt=""></a>
-    <!--导航栏-->
-    <div class="my-nav">
-      <ul class="nav">
-        <li><a href="">首页</a></li>
-        <li class="drop-down"><a href="">展会介绍</a>
-          <ul class="drop-down-content">
-            <li><a href="">组织机构</a></li>
-            <li><a href="">展区分布</a></li>
-            <li><a href="">展品范围</a></li>
-            <li><a href="">2017展商名录</a></li>
-            <li><a href="">2014展会回顾</a></li>
-            <li><a href="">2015展会回顾</a></li>
-            <li><a href="">2016展会回顾</a></li>
-            <li><a href="">2017展会回顾</a></li>
-          </ul>
-        </li>
-        <li><a href="">参展服务</a></li>
-        <li><a href="">参观服务</a></li>
-        <li><a href="">现场活动</a></li>
-        <li><a href="">新闻中心</a></li>
-        <li><a href="">联系我们</a></li>
-      </ul>
-    </div>
-    <!--中英国旗图标-->
-    <div class="logo-right">
-      <span class="flag"><img src="../assets/China Flag.png" alt=""></span>
-      <span>|</span>
-      <span class="flag"><img src="../assets/UK Flag.png" alt=""></span>
-      <span id="en">EN</span>
-      <span id="cn">中</span>
+<div class="father">
+  <div class="child1">
+    <div class="wrap">
+      <img src="src/assets/乳制品_03.png" alt="">
+      <p>文字描述</p>
     </div>
   </div>
-  <!--banner-->
-
-  <!--入口-->
-  <!--资讯-->
-  <!--参展范围-->
-  <!--部分参展企业-->
-  <!--footer-->
-  <!--float-->
+  <div class="child2">
+    <img src="src/assets/乳制品悬停_03.png" alt="">
+  </div>
 </div>
+<script>
+$(".father").hover(function () {
+  $(".child1").hide();$(".child2").show();
+},function () {
+  $(".child1").show();$(".child2").hide();
+})
+
+</script>
 </body>
 </html>

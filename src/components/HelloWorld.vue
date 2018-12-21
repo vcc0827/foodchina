@@ -40,11 +40,11 @@
     <div class="my-banner">
     <!--会展名-->
     <div class="show-name">
-      <img src="../assets/showName.png" alt="">
+
     </div>
     <!--时间地点-->
     <div class="time-place">
-      <img src="../assets/timePlace.png" alt="">
+
     </div>
     <!--轮播图-->
     <div class="banner-dot">
@@ -121,110 +121,7 @@
         <div class="ran-tit"><p>参展范围</p></div>
         <div class="ran-line"></div>
       </div>
-      <table>
-        <tr>
-          <td>
-            <div @mouseenter="toggle()" @mouseleave="toggle()">
-              <div v-show="isShow" class="r1">
-                <img class="ran-icons" src="../assets/乳制品_03.png" alt="">
-                <p class="tp">乳制品</p>
-              </div>
-              <div v-show="!isShow" class="tab-hover">
-                <div class="tab-title">乳制品</div>
-                <p class="tab-p">类型、类型、类型类型、类型、类型</p></div>
-            </div>
-          </td>
-          <td>
-            <div class="r1">
-              <img class="ran-icons" src="../assets/甜品_05.png" alt="">
-              <p class="tp">甜品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/冷冻食品_05.png" alt=""></div>
-              <p class="tp">冷冻食品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/饮料_05.png" alt=""></div>
-              <p class="tp">咖啡、水及饮料</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/调味品_05.png" alt=""></div>
-              <p class="tp">调味品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/农产品_05.png" alt=""></div>
-              <p class="tp">农产品</p></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/肉制品_06.png" alt=""></div>
-              <p class="tp">肉制品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/果蔬_07.png" alt=""></div>
-              <p class="tp">果蔬</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/有机食品_07.png" alt=""></div>
-              <p class="tp">天然、有机食品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/烘焙食品.png" alt=""></div>
-              <p class="tp">烘焙食品</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/酒类_07.png" alt=""></div>
-              <p class="tp">酒类</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/粮油加工品_07.png" alt=""></div>
-              <p class="tp">油粮加工品</p></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/餐饮食材_06.png" alt=""></div>
-              <p class="tp">餐饮食材</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/食品添加剂_07.png" alt=""></div>
-              <p class="tp">食品添加剂</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/食品机械_07.png" alt=""></div>
-              <p class="tp">食品机械</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/食品仓储_07.png" alt=""></div>
-              <p class="tp">食品仓储与物流</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/品牌创意_07.png" alt=""></div>
-              <p class="tp">品牌创意与包装</p></div>
-          </td>
-          <td>
-            <div class="r1">
-              <div><img class="ran-icons" src="../assets/投资咨询_07.png" alt=""></div>
-              <p class="tp">投资咨询与服务</p></div>
-          </td>
-        </tr>
-      </table>
+      <div></div>
     </div>
     <!--参展范围 end-->
 
@@ -692,14 +589,14 @@
     height: 348px;
     margin-left: 385px;
     margin-top: 71px;
-    background-image: url("../assets/msg-bcg.png");
+    border: 1px red dashed;
     float: left;
   }
 
   .pic {
     width: 541px;
     height: 348px;
-    background-image: url("../assets/msg-pic.png");
+    border: 1px red dashed;
   }
 
   .msg-time {
