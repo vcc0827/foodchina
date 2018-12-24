@@ -397,14 +397,14 @@ li a:hover {
 /*参展范围*/
 .range {
   width: 100%;
-text-align:center;
+  text-align: center;
 }
 
 .range-title {
   width: 123px;
   height: 44px;
   position: relative;
-  left: 20%;
+  left: 18.9%;
 }
 
 .right-top {
@@ -443,7 +443,7 @@ text-align:center;
 }
 
 .range-row {
-  display:inline-block;
+  display: inline-block;
 }
 
 .range-box {
@@ -453,12 +453,18 @@ text-align:center;
   background: #fff;
   border: 1px solid #eceef0;
   float: left;
+  margin: 15px 15px 15px 15px;
 }
 
 .show-box {
   width: 170px;
   height: 204px;
   display: block;
+}
+
+.img-down {
+  position: relative;
+  top: 20%;
 }
 
 .range-img1-1 {
@@ -598,7 +604,7 @@ text-align:center;
   color: #333333;
   text-align: center;
   position: relative;
-  top: 10%;
+  bottom: -32%;
 }
 
 .hide-box {
@@ -621,9 +627,10 @@ text-align:center;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 30px;
   color: #ffffff;
   text-align: center;
+  position: relative;
+  top: 20%;
 }
 
 .hide-content {
@@ -631,8 +638,10 @@ text-align:center;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 24px;
   color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 30%;
 }
 
 .com {
@@ -648,9 +657,9 @@ text-align:center;
   font-stretch: normal;
   letter-spacing: 0;
   color: #333333;
-  text-align:center;
-  position:relative;
-  top:21%;
+  text-align: center;
+  position: relative;
+  top: 21%;
 }
 
 .com-bg {
