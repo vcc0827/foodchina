@@ -1,6 +1,6 @@
 # foodshow
 
-> A Vue.js project
+> A Vue.js project (na a)
 
 ## Build Setup
 
