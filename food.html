@@ -10,52 +10,56 @@
   <link rel="stylesheet" href="static/food.css">
 </head>
 <body>
-<!--菜单栏底部多1px-->
 <header>
   <!--top-->
-  <div class="my-top mid">
-    <div>
-      <!--左侧logo-->
-      <a href=""><img class="logo" src="src/assets/logo.png" alt=""></a>
-      <!--导航栏-->
-      <div class="my-nav">
-        <ul class="nav">
-          <li><a href="">首页</a></li>
-          <li class="drop-down"><a href="">展会介绍</a>
-            <ul class="drop-down-content">
-              <li><a href="">组织机构</a></li>
-              <li><a href="">展区分布</a></li>
-              <li><a href="">展品范围</a></li>
-              <li><a href="">2017展商名录</a></li>
-              <li><a href="">2014展会回顾</a></li>
-              <li><a href="">2015展会回顾</a></li>
-              <li><a href="">2016展会回顾</a></li>
-              <li><a href="">2017展会回顾</a></li>
-            </ul>
-          </li>
-          <li><a href="">参展服务</a></li>
-          <li><a href="">参观服务</a></li>
-          <li><a href="">现场活动</a></li>
-          <li><a href="">新闻中心</a></li>
-          <li><a href="">联系我们</a></li>
-        </ul>
-      </div>
-      <!--中英国旗图标-->
-      <div class="logo-right">
-        <span class="flag"><img src="src/assets/China Flag.png" alt=""></span>
-        <span>|</span>
-        <span class="flag"><img src="src/assets/UK Flag.png" alt=""></span>
-        <span id="en">EN</span>
-        <!--<span id="cn" v-show="show">中</span>-->
-      </div>
+  <div class="my-top">
+    <!--左侧logo-->
+    <a class="logo" href=""><img src="src/assets/logo.png" alt=""></a>
+    <!--导航栏-->
+    <div class="my-nav">
+      <ul class="nav">
+        <li><a href="">首页</a></li>
+        <li class="drop-down"><a href="">展会介绍</a>
+          <ul class="drop-down-content">
+            <li><a href="">组织机构</a></li>
+            <li><a href="">展区分布</a></li>
+            <li><a href="">展品范围</a></li>
+            <li><a href="">2017展商名录</a></li>
+            <li><a href="">2014展会回顾</a></li>
+            <li><a href="">2015展会回顾</a></li>
+            <li><a href="">2016展会回顾</a></li>
+            <li><a href="">2017展会回顾</a></li>
+          </ul>
+        </li>
+        <li><a href="">参展服务</a></li>
+        <li><a href="">参观服务</a></li>
+        <li><a href="">现场活动</a></li>
+        <li><a href="">新闻中心</a></li>
+        <li><a href="">联系我们</a></li>
+      </ul>
     </div>
+    <!--中英国旗图标-->
+    <div class="logo-right">
+      <span class="click-able"><img src="src/assets/China Flag.png" alt=""></span>
+      <span>|</span>
+      <span class="click-able"><img src="src/assets/UK Flag.png" alt=""></span>
+      <span class="en click-able">EN</span>
+      <!--<span id="cn" v-show="show">中</span>-->
+    </div>
+    <div class="clear"></div>
   </div>
   <!--banner-->
   <div class="my-banner">
     <!--轮播图-->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+        <div class="swiper-slide">
+          <img src="src/assets/banner.png" alt="">
+          <!--<div class="over-banner ">-->
+          <!--<img src="src/assets/bannerpage1.png" alt="">-->
+          <!--<img src="src/assets/bannerpage2.png" alt="">-->
+          <!--</div>-->
+        </div>
         <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
         <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
         <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
@@ -69,21 +73,21 @@
 <div class="container">
   <!--入口-->
   <div class="my-enter">
-    <div class="enter-box">
-      <div>
-        <div class="m1"></div>
+    <div class="enter-wrap ">
+      <div class="enter-box">
+        <div class="m1 click-able"></div>
         <div class="c3">展位预定</div>
       </div>
-      <div>
-        <div class="m2"></div>
+      <div class="enter-box">
+        <div class="m2 click-able"></div>
         <div class="c3">注册参观</div>
       </div>
-      <div>
-        <div class="m3"></div>
+      <div class="enter-box">
+        <div class="m3  click-able"></div>
         <div class="c3">贸易配对</div>
       </div>
-      <div>
-        <div class="m4"></div>
+      <div class="enter-box">
+        <div class="m4  click-able"></div>
         <div class="c3">热门活动</div>
       </div>
     </div>
@@ -106,135 +110,253 @@
           <!--<div class="msg-btns msg-btns-click"></div>-->
         </div>
       </div>
-      <button class="btn">更多资讯</button>
     </div>
   </div>
-
+  <div class="clear"></div>
   <!--参展范围-->
   <div class="range">
-    <div class="rang-content">
-      <div class="range-title">
-        <span class="range-span">参展范围</span>
-        <div class="range-line"></div>
-      </div>
-      <div class="range-images">
-        <div class="range-row">
-          <div class="range-box">
-            <div class="box1">
-              <div  class="range-boxs">
-                <div class="range-img1-1"></div>
-                <div class="range-word">乳制品</div>
-              </div>
-              <div  class="hdiv">
-               <div class="title">标题</div>
-                <div class="content">内容</div>
-              </div>
-            </div>
+    <div class="range-title">
+      <div class="right-top"></div>
+      <div class="left-bottom">参展范围</div>
+      <div class="range-line"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="range-images">
+      <div class="range-row">
+        <div class="range-box click-able">
+          <div class="show-box">
+            <div class="range-img1-1"></div>
+            <div class="range-word">乳制品</div>
           </div>
-          <div class="range-box">
-            <div class="box1">
-              <div  class="range-boxs">
-                <div class="range-img1-2"></div>
-                <div class="range-word">甜品</div>
-              </div>
-              <div  class="hdiv">
-                <div class="title">标题</div>
-                <div class="content">内容</div>
-              </div>
-            </div>
+          <div class="hide-box">
+            <div class="hide-title">乳制品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
           </div>
-          <div class="range-box">
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
+            <div class="range-img1-2"></div>
+            <div class="range-word">甜品</div>
+          </div>
+          <div class="hide-box">
+            <div class="hide-title">甜品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img1-3"></div>
             <div class="range-word">冷冻食品</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">冷冻食品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img1-4"></div>
             <div class="range-word">咖啡、水及饮料</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">咖啡、水及饮料</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img1-5"></div>
             <div class="range-word">调味品</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">调味品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img1-6"></div>
             <div class="range-word">农产品</div>
           </div>
+          <div class="hide-box">
+            <div class="hide-title">农产品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
         </div>
-        <div class="range-row">
-          <div class="range-box">
+      </div>
+      <div class="range-row">
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-1"></div>
             <div class="range-word">肉制品</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">肉制品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-2"></div>
             <div class="range-word">果蔬</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">果蔬</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-3"></div>
             <div class="range-word">天然、有机食品</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">天然、有机食品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-4"></div>
             <div class="range-word">烘焙食品</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">烘焙食品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-5"></div>
             <div class="range-word">酒类</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">酒类</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img2-6"></div>
             <div class="range-word">油粮加工品</div>
           </div>
+          <div class="hide-box">
+            <div class="hide-title">油粮加工品</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
         </div>
-        <div class="range-row">
-          <div class="range-box">
+      </div>
+      <div class="range-row">
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-1"></div>
             <div class="range-word">餐饮食材</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">餐饮食材</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-2"></div>
             <div class="range-word">食品添加剂</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">食品添加剂</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-3"></div>
             <div class="range-word">食品机械</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">食品机械</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-4"></div>
             <div class="range-word">食品仓储与物流</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">食品仓储与物流</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-5"></div>
             <div class="range-word">品牌创意与包装</div>
           </div>
-          <div class="range-box">
+          <div class="hide-box">
+            <div class="hide-title">品牌创意与包装</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
+          </div>
+        </div>
+        <div class="range-box click-able">
+          <div class="show-box">
             <div class="range-img3-6"></div>
-            <div class="range-word">投资咨询与服务</div>
+            <div class="range-word">投资资讯与服务</div>
+          </div>
+          <div class="hide-box">
+            <div class="hide-title">投资资讯与服务</div>
+            <div class="hide-content">类型、类型类型、类型、类型、类型类型、类型、类型</div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <!--参展企业 轮播图-->
+  <div class="com">
+    <div class="com-title">部分参展企业</div>
+    <!--轮播图-->
+    <div class="com-bg">
+
+    </div>
+  </div>
+
+  <!--固定侧栏小广告-->
+  <div>
 
   </div>
 </div>
-<footer>
 
+
+<footer>
+  <div>
+    <div class="foot">
+      <div class="foot-up">
+        <p>上海万耀企龙展览有限公司（上海总部）</p>
+        <p>电话：+86 21 6195 6088</p>
+        <p>地址：上海市静安区南京西路1333号上海展览中心商务楼</p>
+      </div>
+      <div class="foot-down">©2018 中国国际食品博览会版权所有 沪ICP备010024094号-2</div>
+      <div class="foot-pic"><img src=" src/assets/VNU.png" alt=""></div>
+    </div>
+  </div>
 </footer>
 <script>
-  var _this = document.getElementById();
-event.
-  $(".box1").hover(
-    function () {
-      $('#1').hide();
-      console.log("隐藏1");
-      $('#h1').show();
-      console.log("显示h1")
-    }, function () {
-      $('#1').show();
-      console.log("恢复1");
-      $('#h1').hide();
-      console.log("隐藏h1")
-    })
+  //   var _this = document.getElementById();
+  // event.
+  //   $(".box1").hover(
+  //     function () {
+  //       $('#1').hide();
+  //       console.log("隐藏1");
+  //       $('#h1').show();
+  //       console.log("显示h1")
+  //     }, function () {
+  //       $('#1').show();
+  //       console.log("恢复1");
+  //       $('#h1').hide();
+  //       console.log("隐藏h1")
+  //     })
 
 
 </script>
