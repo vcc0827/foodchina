@@ -41,9 +41,9 @@
 }
 
 /*.swiper-slide img {*/
-  /*display: block;*/
-  /*width: 100%;*/
-  /*max-width:100%;*/
+/*display: block;*/
+/*width: 100%;*/
+/*max-width:100%;*/
 /*}*/
 
 /*Top start*/
@@ -198,10 +198,12 @@ li a:hover {
   width: 100%;
   display: inline-block;
   margin-top: 3%;
+  margin-left: 19.3%;
 }
 
 .enter-box {
-  margin-right: 5%;
+  margin-right: 6.5%;
+  margin-left:3.5%;
   float: left;
 }
 
@@ -281,19 +283,25 @@ li a:hover {
   width: 100%;
   height: 590px;
   background-color: #eeeeee;
-  text-align: center;
+
 }
 
-.banner3{
+.banner3 {
   width: 541px;
   height: 348px;
+  display: inline-block;
+  position: relative;
+  left: 19.3%;
+  top: 12%;
 }
+
 /*包裹自定义分页器的div的位置等CSS样式*/
 .swiper-pagination-custom {
   bottom: 10px;
   left: 0;
   width: 100%;
 }
+
 /*自定义分页器的样式，这个你自己想要什么样子自己写*/
 .swiper-pagination-customs-mid {
   width: 8px;
@@ -304,140 +312,70 @@ li a:hover {
   margin: 0 5px;
   cursor: pointer;
 }
+
 /*自定义分页器激活时的样式表现*/
 .swiper-pagination-customs-mid-active {
   opacity: 1;
   background-color: #ed6d00;
 }
 
-
-.msg-btns {
-  position: absolute;
-  text-align: center;
-  -webkit-transition: .3s opacity;
-  -o-transition: .3s opacity;
-  transition: .3s opacity;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  z-index: 10
-}
-
-.msg-btns-click {
-  cursor: pointer;
-}
-
-.msg-ctro {
-}
-
-.msg-swp {
-
-}
-
-.ctro-right {
-  width: 100%;
-}
-
-.msg-up {
-  width: 534px;
-  float: left;
-}
-
-.line {
-  width: 540px;
-  height: 1px;
-  background: #eee;
+.msg-txt {
+  width: 556px;
+  height: 322px;
+  border: 1px red solid;
+  display: inline-block;
   position: relative;
-  top: 49px;
-  float: left;
+  left: 25%;
+  top: -4.5%;
 }
 
-.msg-down {
-  width: 550px;
-  float: left;
+.msg-top{
+  width:100%;
 }
 
+.msg-down{
+  width:100%;
+}
+.msg-line{
+  clear:both;
+}
 .left-top {
   width: 40px;
   height: 40px;
-  background-color: #ed6e02;
+  background: #ed6e02;
   font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 1px;
   color: #ffffff;
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center;
   float: left;
 }
 
 .left-mid {
-  width: 30px;
-  height: 15px;
+  width: 100%;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0px;
   color: #999999;
   float: left;
-  position: relative;
-  top: 51px;
-  left: -35px;
+  margin-top: 1.5%;
 }
 
-.mid-top {
-  width: 492px;
+.msg-title {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 30px;
-  letter-spacing: 0;
   color: #333333;
+  position: relative;
+  left: 5%;
 }
 
-.content {
+.msg-content {
+
   width: 483px;
-  height: 71px;
-  font-family: MicrosoftYaHei;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 22px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: #666666;
-  position: relative;
-  top: 30px;
-  left: 30px;
-  float: left;
-}
-
-.line {
-  width: 540px;
-  height: 1px;
-  background: #eee;
-  float: left;
-  position: relative;
-  top: 49px;
-  left: 73px;
-}
-
-.btn {
-  width: 150px;
-  height: 40px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  border: solid 1px #dddddd;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: 1px;
-  color: #333333;
-  position: relative;
-  top: 480px;
-  left: -650px;
-  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /*资讯 end*/
@@ -745,24 +683,27 @@ li a:hover {
 .b2mg {
 
 }
-.button-next{
+
+.button-next {
   outline: none;
-  background:url("../src/assets/button-next.png");
-  width:40px;
-  height:110px;
+  background: url("../src/assets/button-next.png");
+  width: 40px;
+  height: 110px;
   position: absolute;
   top: 22px;
   right: 0px;
 }
-.button-prev{
+
+.button-prev {
   outline: none;
-  background:url("../src/assets/button-prev.png");
-  width:40px;
-  height:110px;
+  background: url("../src/assets/button-prev.png");
+  width: 40px;
+  height: 110px;
   position: absolute;
   top: 22px;
   left: 0px;
 }
+
 /*foot*/
 .foot {
   width: 100%;
