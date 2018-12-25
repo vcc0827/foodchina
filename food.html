@@ -62,20 +62,33 @@
           <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png"
                                                                          alt=""></a></div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination banner1-c"></div>
       </div>
       <a class="content1" href=""><img class="banner1-top  z2" src="src/assets/bannerpage1.png" alt=""></a>
       <div><a class="content2" href=""><img class="banner1-down  z2" src="src/assets/bannerpage2.png" alt=""></a></div>
       <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
       <script>
         var mySwiper = new Swiper('.banner1 .swiper-container', {
-          spaceBetween: 30,
+          autoplay:true,
+          clickable:true,
+          slidesPerView:1,
+          spaceBetween: 0,
+          slidesPerGroup:1,
           loop: true,
-          autoplay: true,
           pagination: {
             el: '.banner1 .swiper-pagination',
-            bulletElement: 'li',
-            clickable: true,
+            type:'custom',
+            renderCustom: function (swiper, current, total) {
+              var customPaginationHtml = '';
+              for (var i = 0; i < total; i++) {
+                if (i === (current - 1)) {
+                  customPaginationHtml += '<span class="swiper-pagination-customs-top swiper-pagination-customs-top-active"></span>';
+                } else {
+                  customPaginationHtml += '<span class="swiper-pagination-customs-top"></span>';
+                }
+              }
+              return customPaginationHtml;
+            },
           },
         })
       </script>
@@ -121,7 +134,7 @@
           </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination banner3-c"></div>
         <!-- Add Arrows -->
         <!--<div class="swiper-button-next"></div>-->
         <!--<div class="swiper-button-prev"></div>-->
@@ -141,7 +154,7 @@
           loop: true,
           loopFillGroupWithBlank: true,
           pagination: {
-            el: '.swiper-pagination',
+            el: '.banner3 .swiper-pagination',
             type: 'custom',
             renderCustom: function (swiper, current, total) {
               var customPaginationHtml = '';
@@ -164,31 +177,35 @@
     </div>
     <div class="msg-txt">
       <div class="msg-top">
-        <span class="left-top">07</span>
-        <span class="left-mid">5月</span>
-        <div class="msg-title">2018第五届中国（上海）国际食品博览会筹备会议隆重召开</div>
-        <div class="useful">
-          <div class="msg-content">2018年5月4日，第五届中国（上海）国际食品博览会筹备会议在黄山茶林场隆重召开。中国食品工业协会刘治常务副会长、中国食品工业协会曹树民副会长、中国食品工业协会侯红梅主任、上海市食品...
-
+        <div class="msg-left">
+            <span class="left-top">07</span>
+            <span class="left-mid">5月</span>
+        </div>
+        <div class="msg-right">
+          <div class="msg-title">2018第五届中国（上海）国际食品博览会筹备会议隆重召开</div>
+          <div class="msg-content">
+            2018年5月4日，第五届中国（上海）国际食品博览会筹备会议在黄山茶林场隆重召开。中国食品工业协会刘治常务副会长、中国食品工业协会曹树民副会长、中国食品工业协会侯红梅主任、上海市食品...
 
 
             会蒋国宾名誉会长、福建省食品工业协会林玉明副会长、贵州省食品工业协会田其明副会长、河南省食品工业
           </div>
         </div>
-        <div class="msg-line">
-
-        </div>
       </div>
+      <div class="msg-line"></div>
       <div class="msg-down">
-        <span class="left-top">10</span>
-        <span class="left-mid">12月</span>
-        <div class="msg-title">精彩展会，感谢有您|致所有食博会来宾</div>
-        <div class="msg-content">
-          尊敬的各位来宾：由中华人民共和国商务部批准，中国食品工业协会主办，光明食品（集团）有限公司承办，上海东艺会展服务有限公司运营的2017中国国际食品博览会已完美落下帷幕...
-          2017食博会吸引了523家国内外知名食品展商参展，其中有21个国家和地区的55家国际参展商，69家进口参展商，参展面积达2万平方米。凭借历届展会积累的良好影响和人气，多个食品行业龙头企业和各地市政府、农垦、食品协会积极参展，包括中粮集团、百事可乐、汾酒集团、来伊份、天喔、上好佳、旺旺食品、今麦郎、黑龙江农垦、
+        <div class="msg-left">
+          <span class="left-top">10</span>
+          <span class="left-mid">12月</span>
         </div>
-      </div>
+       <div class="msg-right">
+         <div class="msg-title">精彩展会，感谢有您|致所有食博会来宾</div>
+         <div class="msg-content">
+           尊敬的各位来宾：由中华人民共和国商务部批准，中国食品工业协会主办，光明食品（集团）有限公司承办，上海东艺会展服务有限公司运营的2017中国国际食品博览会已完美落下帷幕...
+           2017食博会吸引了523家国内外知名食品展商参展，其中有21个国家和地区的55家国际参展商，69家进口参展商，参展面积达2万平方米。凭借历届展会积累的良好影响和人气，多个食品行业龙头企业和各地市政府、农垦、食品协会积极参展，包括中粮集团、百事可乐、汾酒集团、来伊份、天喔、上好佳、旺旺食品、今麦郎、黑龙江农垦、
+         </div>
+       </div>
 
+      </div>
     </div>
   </div>
 

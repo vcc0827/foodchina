@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.z-1 {
+  z-index: -1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
 .lbmg img {
   width: 100%;
 }
@@ -168,20 +176,57 @@ li a:hover {
 /*Top end*/
 
 /*Banner start*/
+.top {
+  position: relative;
+  top: 1px;
+}
+
 .banner1 {
   width: 100%;
+}
+/*包裹自定义分页器的div的位置等CSS样式*/
+.swiper-pagination-custom{
+  bottom: 16px;
+  left: 0;
+  width: 8px;
+  height:8px;
+}
+.banner1-c{
+  text-align:center;
+}
+
+/*自定义分页器的样式，这个你自己想要什么样子自己写*/
+.swiper-pagination-customs-top {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #afafaf;
+  opacity: .3;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius:100%;
+  bottom:0;
+}
+
+/*自定义分页器激活时的样式表现*/
+.swiper-pagination-customs-top-active {
+  height: 10px;
+  opacity: 1;
+  border-radius:100%;
+  background-color: #ed6d00;
+  width:10px;
 }
 
 .banner1-top {
   position: absolute;
-  top: 1.5%;
+  top: 13%;
   left: 19.3%;
 }
 
 .banner1-down {
   position: absolute;
   left: 19.3%;
-  top: 22.7%;
+  top: 71.7%;
 }
 
 /*Banner end*/
@@ -203,7 +248,7 @@ li a:hover {
 
 .enter-box {
   margin-right: 6.5%;
-  margin-left:3.5%;
+  margin-left: 3.5%;
   float: left;
 }
 
@@ -282,26 +327,28 @@ li a:hover {
 .msg {
   width: 100%;
   height: 590px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 
 }
 
 .banner3 {
   width: 541px;
   height: 348px;
-  display: inline-block;
   position: relative;
   left: 19.3%;
   top: 12%;
 }
 
 /*包裹自定义分页器的div的位置等CSS样式*/
-.swiper-pagination-custom {
-  bottom: 10px;
+.swiper-pagination-custom{
+  bottom: 16px;
   left: 0;
   width: 100%;
+  margin-right:10px;
 }
-
+.banner3-c{
+  text-align:right;
+}
 /*自定义分页器的样式，这个你自己想要什么样子自己写*/
 .swiper-pagination-customs-mid {
   width: 8px;
@@ -320,51 +367,51 @@ li a:hover {
 }
 
 .msg-txt {
-  width: 556px;
-  height: 322px;
-  border: 1px red solid;
-  display: inline-block;
+  width: 560px;
+  height: 332px;
   position: relative;
-  left: 25%;
-  top: -4.5%;
+  top: -47%;
+  left: 56%;
 }
 
-.msg-top{
-  width:100%;
+.msg-top {
+  width: 100%;
+  height: 112px;
 }
 
-.msg-down{
-  width:100%;
+.msg-left {
+  float: left;
+  width: 13%;
 }
-.msg-line{
-  clear:both;
-}
+
 .left-top {
+  display: block;
   width: 40px;
   height: 40px;
   background: #ed6e02;
   font-size: 24px;
   color: #ffffff;
-  float: left;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .left-mid {
-  width: 100%;
   font-size: 14px;
   color: #999999;
+  text-align: center;
+}
+
+.msg-right {
+  width: 87%;
   float: left;
-  margin-top: 1.5%;
 }
 
 .msg-title {
   font-size: 16px;
   color: #333333;
-  position: relative;
-  left: 5%;
 }
 
 .msg-content {
-
   width: 483px;
   font-size: 14px;
   font-weight: normal;
@@ -376,6 +423,25 @@ li a:hover {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.msg-down {
+  width: 100%;
+  height: 112px;
+  position:relative;
+  top:30%;
+}
+
+.msg-line {
+  clear: both;
+}
+
+.msg-line {
+  width: 540px;
+  height: 1px;
+  background-color: #eeeeee;
+  position: relative;
+  top:12%;
 }
 
 /*资讯 end*/
