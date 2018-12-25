@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.lbmg img {
+  width: 100%;
+}
+
 .click-able {
   cursor: pointer;
 }
@@ -10,6 +14,37 @@
 .clear {
   clear: both;
 }
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*.swiper-slide img {*/
+  /*display: block;*/
+  /*width: 100%;*/
+  /*max-width:100%;*/
+/*}*/
 
 /*Top start*/
 .my-top {
@@ -133,14 +168,20 @@ li a:hover {
 /*Top end*/
 
 /*Banner start*/
-.my-banner {
-  margin-top: 1px;
+.banner1 {
   width: 100%;
-  z-index: -1;
 }
 
-.over-banner {
+.banner1-top {
+  position: absolute;
+  top: 1.5%;
+  left: 19.3%;
+}
 
+.banner1-down {
+  position: absolute;
+  left: 19.3%;
+  top: 22.7%;
 }
 
 /*Banner end*/
@@ -238,15 +279,37 @@ li a:hover {
 /*资讯 start*/
 .msg {
   width: 100%;
-  height: 360px;
-  background-color: #fff;
+  height: 590px;
+  background-color: #eeeeee;
+  text-align: center;
 }
 
-.car {
+.banner3{
   width: 541px;
   height: 348px;
-  float: left;
 }
+/*包裹自定义分页器的div的位置等CSS样式*/
+.swiper-pagination-custom {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+/*自定义分页器的样式，这个你自己想要什么样子自己写*/
+.swiper-pagination-customs-mid {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #dddddd;
+  opacity: .3;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/*自定义分页器激活时的样式表现*/
+.swiper-pagination-customs-mid-active {
+  opacity: 1;
+  background-color: #ed6d00;
+}
+
 
 .msg-btns {
   position: absolute;
@@ -264,21 +327,6 @@ li a:hover {
 }
 
 .msg-ctro {
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #afafaf;
-
-}
-
-.swiper-pagination-bullet-active {
-  width: 10px;
-  height: 10px;
-  background: #ffb300;
 }
 
 .msg-swp {
@@ -663,8 +711,59 @@ li a:hover {
 }
 
 .com-bg {
+  width: 100%;
+  position: relative;
+  top: 40%;
 }
 
+.mid {
+  background: #ffffff;
+  width: 1170px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.banner2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.z-1 {
+  z-index: -1;
+}
+
+.bottom-img {
+
+}
+
+.b2a {
+  width: 100%;
+  height: 100%;
+}
+
+.b2mg {
+
+}
+.button-next{
+  outline: none;
+  background:url("../src/assets/button-next.png");
+  width:40px;
+  height:110px;
+  position: absolute;
+  top: 22px;
+  right: 0px;
+}
+.button-prev{
+  outline: none;
+  background:url("../src/assets/button-prev.png");
+  width:40px;
+  height:110px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+}
+/*foot*/
 .foot {
   width: 100%;
   height: 180px;

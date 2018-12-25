@@ -3,75 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="static/swiper-4.4.2/dist/css/swiper.min.css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-<div class="all">
-  <div class="a">
-    这是A的内容
+
+<div class="top">
+  <div class="banner1  z-1">
+    <div class="swiper-container ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+        <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+        <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+        <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div><a class="content1" href=""><img class="banner1-top  z2" src="src/assets/bannerpage1.png" alt=""></a></div>
+    <div><a class="content2" href=""><img class="banner1-down  z2" src="src/assets/bannerpage2.png" alt=""></a></div>
+    <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+    <script>
+      var mySwiper = new Swiper('.banner1 .swiper-container', {
+        spaceBetween: 30,
+        loop: true,
+        autoplay: false,
+        pagination: {
+          el: '.banner1 .swiper-pagination',
+          bulletElement: 'li',
+          clickable: true,
+        },
+      })
+    </script>
   </div>
-  <div class="b">
-    这是B的内容
+</div>
+<div class="foo">
+  <div class="mid">
+    <div class="banner2  z-1">
+      <div class="swiper-container ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swipers"><a href="" class="b2a"><img class="b2mg" src="src/assets/fp1.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp2.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp3.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp4.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp5.png" alt=""></a></div>
+          </b2mg
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+        <script>
+          var mySwiper = new Swiper('.banner2 .swiper-container', {
+            autoplay: false,
+            spaceBetween: 30,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            slidesPerView: 5,
+            slidesPerGroup: 1,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          })
+        </script>
+      </div>
+    </div>
   </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="dd">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg "  src="src/assets/fp1.png" alt=""></a</div>
+      <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp2.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp3.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp4.png" alt=""></a></div>
+      <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp5.png" alt=""></a></div>
+    </div>
+    <!-- Add Pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+    <!-- Add Arrows -->
+    <div class="swiper-button-next button-next"></div>
+    <div class="swiper-button-prev button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.dd .swiper-container', {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      autoplay:true,
+      loopFillGroupWithBlank: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next .button-next',
+        prevEl: '.swiper-button-prev .button-prev',
+      },
+
+    });
+  </script>
+
+
 </div>
 <br>
-<div class="box">
-  <div class="right-top"></div>
-  <div class="left-bottom"></div>
-</div>
+<br>
+<br>
+<br>
 </body>
 <style>
-  .box {
-    width: 123px;
-    height: 44px;
-    border: 1px black solid;
+  .button-next{
+
+  }
+  .button-prev{
+
+  }
+  .dd{
+    width: 1170px;
+    position:relative;
+    left:25%;
   }
 
-  .right-top {
-    width: 40px;
-    height: 40px;
-    float: right;
-    top: 0;
-    background: red;
+
+  /*foo*/
+  .foo {
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .b2a{
+    width: 218px;
+    height: 110px;
+  }
+  .b2mg{
+    width:100%;
+  }
+  .mid {
+    margin: 0 auto;
   }
 
-  .left-bottom {
-    width: 120px;
-    height: 40px;
+  /*foo*/
+  .top .banner1-top .banner1-down {
+    width: 100%;
+    height: 100%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fl {
     float: left;
-    bottom: 0;
-    background: blue;
   }
 
-  .all {
-    width: 101px;
-    height: 101px;
-    border: 1px solid black;
+  .z-1 {
+    z-index: -1;
   }
 
-  .a {
-    width: 100px;
-    height: 100px;
-  }
-.b{
-  width: 100px;
-  height: 100px;
-}
-  .a {
-    background: url("src/assets/sprites/range.png") no-repeat -10px -10px;
-    display: block;
+  .z2 {
+    z-index: 2;
   }
 
-  .b {
-    background: #ed6d00;;
-    display: none;
+  .banner1 {
+    width: 100%;
   }
 
-  .all:hover .a {
-    display: none;
+  .lbmg {
+    width: 100%;
+    height: 100%;
   }
 
-  .all:hover .b {
-    display: block;
+  .banner1-top {
+    width: auto;
+    position: absolute;
+    top: 8.5%;
+    left: 19.3%;
+  }
+
+  .banner1-down {
+    position: absolute;
+    left: 19.3%;
+    top: 38.7%;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 </style>
 </html>

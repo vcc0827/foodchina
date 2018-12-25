@@ -49,23 +49,32 @@
     <div class="clear"></div>
   </div>
   <!--banner-->
-  <div class="my-banner">
-    <!--轮播图-->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="src/assets/banner.png" alt="">
-          <!--<div class="over-banner ">-->
-          <!--<img src="src/assets/bannerpage1.png" alt="">-->
-          <!--<img src="src/assets/bannerpage2.png" alt="">-->
-          <!--</div>-->
+  <div class="top">
+    <div class="banner1  z-1">
+      <div class="swiper-container ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
+          <div class="swiper-slide swipers"><a href="" class="lbck"><img class="lbmg " src="src/assets/banner.png" alt=""></a></div>
         </div>
-        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
-        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
-        <div class="swiper-slide"><img src="src/assets/banner.png" alt=""></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- 分页器 -->
-      <div class="swiper-pagination"></div>
+      <a class="content1" href=""><img class="banner1-top  z2" src="src/assets/bannerpage1.png" alt=""></a>
+      <div><a class="content2" href=""><img class="banner1-down  z2" src="src/assets/bannerpage2.png" alt=""></a></div>
+      <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+      <script>
+        var mySwiper = new Swiper('.banner1 .swiper-container', {
+          spaceBetween: 30,
+          loop: true,
+          autoplay: true,
+          pagination: {
+            el: '.banner1 .swiper-pagination',
+            bulletElement: 'li',
+            clickable: true,
+          },
+        })
+      </script>
     </div>
   </div>
 </header>
@@ -94,23 +103,57 @@
   </div>
 
   <!--资讯-->
-  <div class="msg mid">
-    <div class="msg-ctro">
-      <div class="ctro-mid">
-        <div class="swiper-container car">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
-            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
-            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
-            <div class="swiper-slide"><img src="src/assets/banner2.png" alt=""></div>
-          </div>
-          <!-- 分页器 -->
-          <div class="swiper-pagination msg-swp"></div>
-          <!--<div class="msg-btns msg-btns-click"></div>-->
-        </div>
+  <div class="banner3">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/banner3.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/banner3.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/banner3.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/banner3.png" alt=""></a></div>
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <!--<div class="swiper-button-next"></div>-->
+      <!--<div class="swiper-button-prev"></div>-->
     </div>
+
+    <!-- Swiper JS -->
+    <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.banner3 .swiper-container', {
+        autoplay: true,
+        clickable:true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'custom',
+          renderCustom: function (swiper, current, total) {
+            var customPaginationHtml = '';
+            for(var i = 0;i < total;i++){
+              if(i === (current -1)){
+                customPaginationHtml += '<span class="swiper-pagination-customs-mid swiper-pagination-customs-mid-active"></span>';
+              }else{
+                customPaginationHtml += '<span class="swiper-pagination-customs-mid"></span>';
+              }
+            }
+            return customPaginationHtml;
+          },
+        },
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      });
+    </script>
   </div>
+
   <div class="clear"></div>
   <!--参展范围-->
   <div class="range">
@@ -317,16 +360,55 @@
     <div class="com-title">部分参展企业</div>
     <!--轮播图-->
     <div class="com-bg">
+        <div class="mid">
+          <div class="banner2  z-1">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp1.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp2.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp3.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp4.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="" class="b2a"><img class="b2mg " src="src/assets/fp5.png" alt=""></a></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next button-next"></div>
+              <div class="swiper-button-prev button-prev"></div>
+            </div>
 
+            <!-- Swiper JS -->
+            <script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper('.banner2 .swiper-container', {
+                autoplay:true,
+                slidesPerView: 5,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                // pagination: {
+                //   el: '.swiper-pagination',
+                //   clickable: true,
+                // },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            </script>
+          </div>
+        </div>
     </div>
   </div>
 
   <!--固定侧栏小广告-->
-  <div>
+  <div class="fly">
 
   </div>
 </div>
-
 
 <footer>
   <div>
@@ -341,46 +423,6 @@
     </div>
   </div>
 </footer>
-<script>
-  //   var _this = document.getElementById();
-  // event.
-  //   $(".box1").hover(
-  //     function () {
-  //       $('#1').hide();
-  //       console.log("隐藏1");
-  //       $('#h1').show();
-  //       console.log("显示h1")
-  //     }, function () {
-  //       $('#1').show();
-  //       console.log("恢复1");
-  //       $('#h1').hide();
-  //       console.log("隐藏h1")
-  //     })
 
-
-</script>
-<!--Swiper JS-->
-<script src="static/swiper-4.4.2/dist/js/swiper.min.js"></script>
-<!--Swiper初始化-->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
-<script>
-  var mySwiper = new Swiper('.swiper-container', {
-    pagination: 'pagination',
-  })
-</script>
 </body>
 </html>
